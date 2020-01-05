@@ -1,4 +1,0 @@
-Data file name: new_data.txt
-Prefix: Step
-3648 last names
-1 start with Step

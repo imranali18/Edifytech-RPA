@@ -1,4 +1,0 @@
-Enter the name of the IMDB file ==> imdb_data.txt
-75
-Broken
-4601

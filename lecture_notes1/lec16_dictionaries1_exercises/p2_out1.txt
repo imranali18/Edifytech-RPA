@@ -1,3 +1,0 @@
-Enter the name of the IMDB file ==> imdb/hanks.txt
-Hanks, Tom appears most often: 41 times
-9 people appear once

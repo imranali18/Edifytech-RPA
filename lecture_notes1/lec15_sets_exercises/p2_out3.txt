@@ -1,4 +1,0 @@
-Data file name: hanks.txt
-Prefix: Step
-1 last names
-0 start with Step

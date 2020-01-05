@@ -1,2 +1,0 @@
-scores2.txt
-sorted2.txt

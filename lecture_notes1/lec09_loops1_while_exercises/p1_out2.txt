@@ -1,7 +1,0 @@
-Enter a positive integer: 16
-0
-3
-6
-9
-12
-15
