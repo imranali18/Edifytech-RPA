@@ -1,0 +1,592 @@
+{
+    "user_id": "welchm3",
+    "legal_first_name": "Madelyn",
+    "preferred_first_name": "Maddy",
+    "legal_last_name": "Welch",
+    "preferred_last_name": "",
+    "registration_section": "1",
+    "default_allowed_late_days": 6,
+    "last_update": "Tuesday, October 22, 2019",
+    "Homework": [
+        {
+            "id": "hw01",
+            "name": "Homework 1",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-09-26 12:23:01 -0400",
+            "score": 100,
+            "status": "Good",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 100,
+            "components": [
+                {
+                    "title": "Arithmetic 1",
+                    "score": 25,
+                    "default_score": 25,
+                    "upper_clamp": 25,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Arithmetic 2",
+                    "score": 25,
+                    "default_score": 25,
+                    "upper_clamp": 25,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Circle",
+                    "score": 5,
+                    "default_score": 5,
+                    "upper_clamp": 5,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Minutes to Hours",
+                    "score": 10,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Cylinder",
+                    "score": 15,
+                    "default_score": 15,
+                    "upper_clamp": 15,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Square root",
+                    "score": 10,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Exponent",
+                    "score": 10,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hw02",
+            "name": "Homework 2",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-01 23:59:59 -0400",
+            "score": 100,
+            "status": "Good",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 100,
+            "components": [
+                {
+                    "title": "Question 1",
+                    "score": 20,
+                    "default_score": 20,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Question 2",
+                    "score": 30,
+                    "default_score": 30,
+                    "upper_clamp": 30,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Question 3",
+                    "score": 30,
+                    "default_score": 30,
+                    "upper_clamp": 30,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Question 4",
+                    "score": 20,
+                    "default_score": 20,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hw03",
+            "name": "Homework 3",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-07 23:59:59 -0400",
+            "score": 100,
+            "status": "Good",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 100,
+            "components": [
+                {
+                    "title": "Problem 1",
+                    "score": 50,
+                    "default_score": 50,
+                    "upper_clamp": 50,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Problem 2",
+                    "score": 20,
+                    "default_score": 20,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "No print statement."
+                        }
+                    ]
+                },
+                {
+                    "title": "Problem 3",
+                    "score": 30,
+                    "default_score": 30,
+                    "upper_clamp": 30,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "No print statement."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hw04",
+            "name": "Homework 4",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-15 23:59:59 -0400",
+            "score": 100,
+            "status": "Late",
+            "days_after_deadline": 1,
+            "extensions": 0,
+            "days_charged": 1,
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 100,
+            "components": [
+                {
+                    "title": "Problem 1 (Driving)",
+                    "score": 30,
+                    "default_score": 30,
+                    "upper_clamp": 30,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Problem 2 (Division)",
+                    "score": 30,
+                    "default_score": 30,
+                    "upper_clamp": 30,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                },
+                {
+                    "title": "Problem 3 (Max)",
+                    "score": 40,
+                    "default_score": 40,
+                    "upper_clamp": 40,
+                    "lower_clamp": 0,
+                    "marks": [
+                        {
+                            "points": 0,
+                            "note": "Full Credit"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hw05",
+            "name": "Homework 5",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-23 23:59:59 -0400",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "Problem 1 part(a)",
+                    "score": 0,
+                    "default_score": 25,
+                    "upper_clamp": 25,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Problem 1 (part b)",
+                    "score": 0,
+                    "default_score": 25,
+                    "upper_clamp": 25,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Problem 2 (part a)",
+                    "score": 0,
+                    "default_score": 20,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Problem 2 (part b)",
+                    "score": 0,
+                    "default_score": 30,
+                    "upper_clamp": 30,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        },
+        {
+            "id": "hw06",
+            "name": "Homework 6",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-29 23:59:59 -0400",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "",
+                    "score": 0,
+                    "default_score": 0,
+                    "upper_clamp": 0,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        }
+    ],
+    "Lecture-exercise": [
+        {
+            "id": "lecture06",
+            "name": "Lecture 1 Exercises",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-09-21 11:40:15 -0400",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "Part 1",
+                    "score": 0,
+                    "default_score": 5,
+                    "upper_clamp": 5,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Part 2",
+                    "score": 0,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Part 3",
+                    "score": 0,
+                    "default_score": 5,
+                    "upper_clamp": 5,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        },
+        {
+            "id": "lecture07",
+            "name": "Lecture 2 Exercises",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-09-29 14:16:00 -0400",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "Problem 1",
+                    "score": 0,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Problem 2",
+                    "score": 0,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        },
+        {
+            "id": "lecture08",
+            "name": "Lecture 3 Exercises",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-12 23:59:59 -0400",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "Problem 1",
+                    "score": 0,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Problem 2",
+                    "score": 0,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        },
+        {
+            "id": "lecture09",
+            "name": "Lecture 4 Exercises",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-13 18:04:04 -0400",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "Problem 1",
+                    "score": 0,
+                    "default_score": 20,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        },
+        {
+            "id": "lecture10",
+            "name": "Lecture 5 Exercises",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2019-10-22 12:24:49 -0400",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "Problem 1",
+                    "score": 0,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": []
+                },
+                {
+                    "title": "Problem 2",
+                    "score": 0,
+                    "default_score": 10,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        }
+    ],
+    "None (for Practice Only)": [
+        {
+            "id": "lecture01",
+            "name": "Test",
+            "gradeable_type": "Electronic File",
+            "grade_released_date": "2020-01-23 23:59:59 -0500",
+            "score": 0,
+            "status": "Unsubmitted",
+            "overall_comment": "",
+            "autograding_score": 0,
+            "tagrading_score": 0,
+            "note": "This has not been graded yet.",
+            "components": [
+                {
+                    "title": "",
+                    "score": 0,
+                    "default_score": 0,
+                    "upper_clamp": 0,
+                    "lower_clamp": 0,
+                    "marks": []
+                }
+            ]
+        }
+    ],
+    "Test": [
+        {
+            "id": "exam01",
+            "name": "Exam 1",
+            "gradeable_type": "Numeric/Text",
+            "grade_released_date": "2019-10-06 11:47:30 -0400",
+            "score": 100,
+            "components": [
+                {
+                    "title": "Q1: Variables",
+                    "score": 20,
+                    "default_score": 0,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0
+                },
+                {
+                    "title": "Q2:Functions(a)",
+                    "score": 10,
+                    "default_score": 0,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0
+                },
+                {
+                    "title": "Q2:Functions(b)",
+                    "score": 20,
+                    "default_score": 0,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0
+                },
+                {
+                    "title": "Q3: Boolean",
+                    "score": 10,
+                    "default_score": 0,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0
+                },
+                {
+                    "title": "Q4:Error",
+                    "score": 20,
+                    "default_score": 0,
+                    "upper_clamp": 20,
+                    "lower_clamp": 0
+                },
+                {
+                    "title": "Q5: Oneliner (a)",
+                    "score": 10,
+                    "default_score": 0,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0
+                },
+                {
+                    "title": "Q5: Output (b)",
+                    "score": 10,
+                    "default_score": 0,
+                    "upper_clamp": 10,
+                    "lower_clamp": 0
+                }
+            ]
+        }
+    ]
+}

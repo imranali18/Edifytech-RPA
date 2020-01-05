@@ -1,0 +1,83 @@
+{
+    "assignment_message" : "Submit each part of your lecture 3 exercises to the right bucket.",
+    "part_names" : [ "Problem 1: Valid Strings", "Problem 2: Stars", "Problem 3: Formatting" ],
+
+    "autograding" : {
+	// need this line to grab the submitted text file for validation
+	// (could alternately use the more general patterns **/*.txt or **/*)
+	"submission_to_validation" : [ "part1/*.txt"]
+    },
+
+    // FIXME:  This section of resource limits should go away soon
+    "resource_limits" : {
+        "RLIMIT_CPU" : 60,
+        "RLIMIT_NPROC" : 100,
+        "RLIMIT_AS" : "RLIM_INFINITY"
+    },
+
+    "testcases" : [
+        {
+            "type" : "FileCheck",
+            "title" : "Which are valid strings?",
+            "points" : 5,
+            "validation" : [
+                {
+                    // verify correctness of answer
+                    "method" : "myersDiffbyLinebyWord",
+                    "actual_file" : "part1/*.txt",
+                    "description" : "Does the list of variable names match?",
+                    "expected_file" : "p1_sol.txt"
+                }
+            ]
+        },
+        {
+            "title" : "Stars",
+            "command" : [ "python3 part2/*.py" ],
+            "points" : 10,
+            "validation" : [
+                {
+                    // verify program output
+                    "method" : "diff",
+                    "comparison" : "byLine",
+                    "ignoreWhitespace" : true,
+                    "ignore_line_endings" : true,
+                    "actual_file" : "STDOUT.txt",
+                    "description" : "Program Output",
+                    "expected_file" : "p2_out.txt"
+                }
+            ]
+        },
+        {
+            "title" : "Formatting",
+            "command" : [ "python3 part3/*.py",
+                          "submitty_count --language python node assign part3/*.py" ],
+            "points" : 5,
+            "validation" : [
+                {
+                    // verify program output
+                    "method" : "myersDiffbyLinebyChar",
+                    "actual_file" : "STDOUT_0.txt",
+                    "description" : "Program Output",
+                    "expected_file" : "p3_out.txt",
+                    "deduction" : 2.00
+                },
+                {
+                    // number of assignments must be == 2
+                    "method" : "intComparison",
+                    "actual_file" : "STDOUT_1.txt",
+                    "description" : "Number of assignments",
+                    "comparison" : "eq",
+                    "term" : 2,
+                    "deduction" : 0.10
+                }
+            ]
+        },
+        {
+            "max_submissions": 100,
+            "penalty": -0.1,
+            "points": -5,
+            "title": "Submission Limit",
+            "type": "FileCheck"
+        }
+    ]
+}

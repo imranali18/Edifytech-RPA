@@ -1,0 +1,407 @@
+/*
+This JSON is based on the automatically generated customization for 
+the development course "sample" as of August 15, 2017.
+It is intended as a simple example, with additional documentation online.
+Going forward we expect more users to use a web interface to generate this file.
+*/
+{
+  "display_benchmark": [
+    "average", 
+    "stddev", 
+    "perfect", 
+    "lowest_a-", 
+    "lowest_b-", 
+    "lowest_c-", 
+    "lowest_d"
+  ], 
+  "section": {
+    "1": "barruj",
+    "STAFF": "",
+    "AUDIT": ""
+  },
+  "omit_section_from_stats": [
+    "STAFF"/*,
+    "AUDIT"*/
+  ],
+  "messages": [
+    "<b>CSCI 1010</b>",
+    "Contact your graduate TA to resolve any discrepancies.",
+    "Any regrade requests must be filed only through Submitty no later than one week after the grades were released.",
+    "<em>Be aware that updates to your grades will not be reflected in Rainbow Grades until the next time they are generated.</em>"
+  ],
+  "display": [
+    "instructor_notes",
+    "grade_summary",
+    "grade_details",
+    "moss_details",
+    "exam_seating"/*,
+    "final_grade"*/
+  ],
+  "final_cutoff": {
+    "A": 93,
+    "A-": 90,
+    "B+": 87,
+    "B": 83,
+    "B-": 80,
+    "C+": 77,
+    "C": 73,
+    "C-": 70,
+    "D+": 67,
+    "D": 60
+  },
+  "use" : {
+    "test_improvement_averaging_adjustment" : false
+  },
+  "manual_grade": [
+  	  
+  ],
+  "plagiarism": [
+	
+  ],
+  "benchmark_percent": {
+    "lowest_c-": 0.7, 
+    "lowest_d": 0.6, 
+    "lowest_b-": 0.8, 
+    "lowest_a-": 0.9
+  },   
+  "gradeables": [
+  {
+    "count": 2,
+    "percent": 0.35,
+    "type": "Test",
+    "ids": [
+    {
+      "max": 100.0,
+      "curve": [ 90,80,70,60 ],
+      "id": "exam01",
+      "percent": 0.50,
+      "released": true,
+      "exam_data": {
+        "active": 1,
+        "exam_title": "Test 1",
+        "exam_date": "Tuesday, October 1st",
+        "exam_time": "10:00 am - 11:50 pm",
+        "exam_default_building": "Lally",
+        "exam_default_room": "102",
+        "min_overall_for_zone_assignment": 0.0/*,
+        "exam_seating_count": "exam_zone_counts.txt",
+        "exam_seating": "exam_seating.txt",
+        "left_right_handedness": "exam_lefty.txt"*/
+      }
+    },
+    {
+      "max": 100.0,
+      "curve": [ 90,80,70,60 ],
+      "id": "exam02",
+      "percent": 0.50,
+      "released": false,
+      "exam_data": {
+        "active": 1,
+        "exam_title": "Test 2",
+        "exam_date": "Tuesday, October 29th",
+        "exam_time": "10:00 am - 11:50 pm",
+        "exam_default_building": "Lally",
+        "exam_default_room": "102",
+        "min_overall_for_zone_assignment": 0.0/*,
+        "exam_seating_count": "exam_zone_counts.txt",
+        "exam_seating": "exam_seating.txt",
+        "left_right_handedness": "exam_lefty.txt"*/
+      }
+    }
+    ]
+  },
+    {
+      "count": 1,
+      "percent": 0.20,
+      "type": "Exam",
+      "ids": [
+        {
+          "max": 100.0,
+          "id": "final",
+      "curve": [90,80,70,60 ],
+      "percent": 1.0,
+          "released": false,
+      "exam_data": {
+        "active": 0,
+        "exam_title": "Final Exam",
+        "exam_date": "Monday, December 16",
+        "exam_time": "10:30 am - 12:10 pm",
+        "exam_default_building": "Darrin",
+        "exam_default_room": "330",
+        "min_overall_for_zone_assignment": 0.0/*,
+        "exam_seating_count": "exam_zone_counts.txt",
+        "exam_seating": "exam_seating.txt",
+        "left_right_handedness": "exam_lefty.txt"*/
+          }
+        }
+      ]
+    },/*
+    {
+      "count": 11,
+      "percent": 0.12,
+      "type": "lab",
+      "ids": [
+        {
+          "max": 2.0,
+          "id": "lab00",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab01",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 4.0,
+          "id": "lab02",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab03",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab04",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab05",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab06",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 4.0,
+          "id": "lab07",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab08",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab09",
+          "percent": 0.0909090909090909,
+          "released": false
+        },
+        {
+          "max": 3.0,
+          "id": "lab10",
+          "percent": 0.0909090909090909,
+          "released": false
+        }
+      ]
+    },*/
+    {
+      "count": 10,
+      "percent": 0.40,
+      "type": "Homework",
+      "ids": [
+        {
+          "max": 100.0,
+          "id": "hw01",
+          "released": true
+        },
+        {
+          "max": 100.0,
+          "id": "hw02",
+          "released": true
+        },
+        {
+          "max": 100.0,
+          "id": "hw03",
+          "released": true
+        },
+        {
+          "max": 100.0,
+          "id": "hw04",
+          "released": true
+        },
+        {
+          "max": 100.0,
+          "id": "hw05",
+          "released": false
+        },
+        {
+          "max": 100.0,
+          "id": "hw06",
+          "released": false
+        },
+        {
+          "max": 100.0,
+          "id": "hw07",
+          "released": false
+        },
+        {
+          "max": 100.0,
+          "id": "hw08",
+          "released": false
+        },
+        {
+          "max": 100.0,
+          "id": "hw09",
+          "released": false
+        },
+        {
+          "max": 100.0,
+          "id": "hw10",
+          "released": false
+        }
+      ]
+    },
+    {
+      "count": 11,
+      "percent": 0.05,
+      "type": "Lecture-Exercise",
+      "remove_lowest": 2,
+      "ids": [
+        {
+          "max": 20,
+          "id": "lecture06",
+          "percent": 0.0045,
+          "released": true
+        },
+        {
+          "max": 20,
+          "id": "lecture07",
+          "percent": 0.0045,
+          "released": true
+        },
+        {
+          "max": 20,
+          "id": "lecture08",
+          "percent": 0.0045,
+          "released": true
+        },
+        {
+          "max": 20,
+          "id": "lecture09",
+          "percent": 0.0045,
+          "released": true
+        },
+        {
+          "max": 20,
+          "id": "lecture10",
+          "percent": 0.0045,
+          "released": true
+        },
+        {
+          "max": 22,
+          "id": "lecture11",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 15,
+          "id": "lecture12",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 14,
+          "id": "lecture13",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 16,
+          "id": "lecture15",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 14,
+          "id": "lecture16",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 14,
+          "id": "lecture17",
+          "percent": 0.05263157894736842,
+          "released": false
+        }/*,
+        {
+          "max": 20,
+          "id": "lecture18",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 16,
+          "id": "lecture19",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 15,
+          "id": "lecture20",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 14,
+          "id": "lecture21",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 8,
+          "id": "lecture22",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 15,
+          "id": "lecture23",
+          "percent": 0.05263157894736842,
+          "released": false
+        },
+        {
+          "max": 20,
+          "id": "lecture24",
+          "percent": 0.05263157894736842,
+          "released": false
+        }*/
+      ]
+    }/*,
+  {
+    "count": 2, 
+    "percent": 0.02, 
+    "type": "Quiz", 
+    "ids": [
+    {
+      "max": 0.0, 
+      "id": "quiz01", 
+      "released": false,
+      "scale_max" : 10.0,
+      "extra_credit" : false
+    },
+    {
+      "max": 0.0, 
+      "id": "quiz02", 
+      "released": false,
+      "scale_max" : 10.0,
+      "extra_credit" : false
+    }    
+    ]
+  }*/
+  ]
+}

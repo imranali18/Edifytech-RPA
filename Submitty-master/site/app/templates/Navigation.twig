@@ -1,0 +1,106 @@
+{% import _self as self %}
+
+{% if display_custom_message %}
+    <div class="content">
+        {{ message_file_contents|raw }}
+    </div>
+{% endif %}
+
+{% if display_room_seating %}
+    <div class="content">
+        {% include 'navigation/RoomSeating.twig' %}
+    </div>
+{% endif %}
+
+
+<div class="content">
+    <h1>Gradeables</h1>
+
+    <table class="gradeable_list" style="width:100%;">
+        {% if sections|length > 0 %}
+            {% for list_section, info in sections %}
+                <tr class="bar">
+                    <td colspan="10">{# spacing #}</td>
+                </tr>
+                <tr class="colspan nav-title-row" id="{{ info.section_id }}">
+                    <td colspan="4">
+                        {{ info.title }}
+                        {% if info.subtitle != "" %}
+                            &nbsp;&nbsp; <em>{{ info.subtitle }}</em>
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="colspan">
+                    <td colspan="10" class="hr">{# hr #}</td>
+                </tr>
+                <tbody id="{{ info.section_id }}_tbody">
+                    {% for g_info in info.gradeables %}
+                    <tr class="gradeable_row" id="{{ g_info.id }}">
+                        {% for button in g_info.buttons_justedit %}
+                            <td style="padding: 20px;"{{ 'btn-nav-open' in button.getClass() ? ' class="td-open"' : button.getTitle() == 'Edit' and g_info.has_build_error ? ' class="edit-build-error"' : '' }}>{{ self.renderButton(button) }}</td>
+                        {% endfor %}
+                        <td>
+                            {{ g_info.name }}
+                            {% if g_info.url|trim != "" %}
+                                <a class="external" href="{{ g_info.url }}" target="_blank">
+                                    <i style="margin-left: 10px;" class="fas fa-external-link-alt"></i>
+                                </a>
+                            {% endif %}
+                            {% if g_info.can_delete %}
+                                <i class="fas fa-trash fa-fw" style="cursor:pointer;" aria-hidden="true" title="Delete Gradeable" onclick='newDeleteGradeableForm("{{ core.buildUrl({'component': 'admin', 'page': 'admin_gradeable', 'action': 'delete_gradeable', 'id': g_info.id}) }}","{{ g_info.name }}");'></i>
+                            {% endif %}
+                        </td>
+                        {% for button in g_info.buttons %}
+                            <td style="padding: 20px;"{{ 'btn-nav-open' in button.getClass() ? ' class="td-open"' : button.getTitle() == 'Edit' and g_info.has_build_error ? ' class="edit-build-error"' : '' }}>{{ self.renderButton(button) }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            {% endfor %}
+        {% else %}
+            <div class="container">
+                <p>There are currently no assignments posted.  Please check back later.</p>
+            </div>
+        {% endif %}
+    </table>
+</div>
+
+{% macro renderButton(button) %}
+    {% if button != null %}
+        <a class="{{ button.getClass() }}"
+            {% if button.getTitle() != null %}
+                name="{{ button.getTitle()|lower }}_button"
+            {% endif %}
+            {% if button.isDisabled() %}
+                disabled
+            {% else %}
+                href="{{ button.getHref() }}"
+            {% endif %}
+            {% if button.isTitleOnHover %}
+                title="{{ button.getTitle() }}"
+            {% endif %}
+            {% if button.getAriaLabel() != null  %}
+                aria-label="{{ button.getAriaLabel() }}"
+            {% endif %}
+        >
+            {% if button.getBadge() > 0 %}
+                <span class="notification_badge">{{  button.getBadge() }} </span>
+            {% endif %}
+
+            {% if not button.isTitleOnHover() and button.getTitle() != null %}
+                {{ button.getTitle() }}
+            {% endif %}
+            {% if button.getSubtitle() != null %}
+                {% if button.getTitle() != null %}
+                    <br>
+                {% endif %}
+                <span class="subtitle">{{ button.getSubtitle()|nl2br }}</span>
+            {% endif %}
+        </a>
+        {% if button.getProgress() != null %}
+            <div class="meter">
+                <span style="width: {{ max(2, button.getProgress()) }}%"></span>
+            </div>
+        {% endif %}
+    {% endif %}
+{% endmacro %}

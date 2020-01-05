@@ -1,0 +1,35 @@
+{% extends 'generic/Popup.twig' %}
+{% block popup_id %}grader-list-form{% endblock %}
+{% block title %}Upload Grader List{% endblock %}
+{% block body %}
+    <p>
+        Format your grader data as an .xlsx or .csv file with {{ use_database ? 8 : 7 }} columns:<br>
+        &emsp;username, first name, last name, email, grader group, {{ use_database ? "password, " : "" }}preferred first name, preferred last name<br>
+    </p>
+    <p>&emsp;</p>
+    <p>
+        Where GraderGroup is:<br>
+        &emsp;1=Instructor<br>
+        &emsp;2=Full Access Grader (graduate teaching assistant)<br>
+        &emsp;3=Limited Access Grader (mentor)<br>
+        &emsp;4=Student (no grading access)<br>
+    </p>
+    <p>&emsp;</p>
+    <p>
+        Preferred first and last names are optional.<br>
+        Do not use a header row.<br>
+    </p>
+    <input type="hidden" name="csrf_token" value="{{ core.getCsrfToken() }}" />
+    <div>
+        <input type="file" name="upload" accept=".xlsx, .csv" aria-label="Choose File">
+    </div>
+{% endblock %}
+{% block form %}
+    <form method="post" action="{{ core.buildUrl({'component': 'admin', 'page': 'users', 'action': 'upload_grader_list'}) }}" enctype="multipart/form-data">
+        {{ parent() }}
+    </form>
+{% endblock %}
+{% block buttons %}
+    {{ block('close_button') }}
+    <input class="btn btn-primary" type="submit" value="Submit" />
+{% endblock %}

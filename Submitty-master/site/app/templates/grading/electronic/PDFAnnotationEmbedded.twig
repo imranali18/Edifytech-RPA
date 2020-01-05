@@ -1,0 +1,42 @@
+<script src="js/pdf/pdf.min.js"></script>
+<script src="js/pdf/pdf_viewer.js"></script>
+<script src="js/pdf/pdf-annotate.min.js"></script>
+<script src="js/pdf/PDFAnnotateEmbedded.js"></script>
+{% if student_popup is not defined or student_popup == false %}
+    {#This initializes the toolbar and activates annotation mode#}
+    <script src="js/pdf/PDFInitToolbar.js"></script>
+{% else %}
+    {#Jquery is needed if a new window is popping up#}
+    <script src="js/jquery.min.js"></script>
+{% endif %}
+
+<link rel="stylesheet" type="text/css" href="css/pdf/pdf_viewer.css"/>
+<link rel="stylesheet" type="text/css" href="css/pdf/pdf_embedded.css"/>
+
+<div id="content-wrapper">
+    <div id="viewer" class="pdfViewer"></div>
+</div>
+
+<script>
+
+    try {
+        for(let i = 0 ; i < localStorage.length; i++){
+            if(localStorage.key(i).includes('annotations')){
+                localStorage.removeItem(localStorage.key(i));
+            }
+        }
+        let annotations = JSON.parse({{ annotation_jsons|json_encode|raw }});
+        for(let grader in annotations){
+            if(annotations[grader] !== ""){
+                localStorage.setItem('{{ filename }}/' + grader +'/annotations', annotations[grader]);
+            }
+        }
+    } catch {
+        alert("Can't fetch annotations");
+    }
+    {% if student_popup %}
+    render_student("{{ gradeable_id }}", "{{ user_id }}", "{{ filename }}", "{{ pdf_url_base | raw}}");
+    {% else %}
+    render("{{ gradeable_id }}", "{{ user_id }}", "{{ grader_id }}", '{{ filename }}', {{ page_num }});
+    {% endif %}
+</script>

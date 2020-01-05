@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/extra_timers.iml" filepath="$PROJECT_DIR$/.idea/extra_timers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../MOSS/reports/post_process/.idea/post_process.iml" filepath="$PROJECT_DIR$/../../MOSS/reports/post_process/.idea/post_process.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../MOSS/submissions/prep/.idea/prep.iml" filepath="$PROJECT_DIR$/../../MOSS/submissions/prep/.idea/prep.iml" />
+      <module fileurl="file://C:/RPI/Courses/cs1-s19/QR_TestMaker/test_counts/.idea/test_counts.iml" filepath="C:/RPI/Courses/cs1-s19/QR_TestMaker/test_counts/.idea/test_counts.iml" />
+    </modules>
+  </component>
+</project>
